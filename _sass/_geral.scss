@@ -49,6 +49,22 @@
 }
 
 .mod058-carousel {
+    .owl-nav {
+        position: absolute;
+        top: 30%;
+        margin: 0;
+        color: #fff;
+        left: 0;
+    }
+
+    .owl-prev {
+        font-size: 5rem !important;
+    }
+
+    .owl-next {
+        font-size: 5rem !important;
+    }
+
     font-family: "Nunito", "nunitolight", "nunito-light", "arial";
     p {
         margin: 0;
@@ -78,11 +94,10 @@
                                     z-index: 1;
                                     word-wrap: break-word;
                                     font-size: 1.5rem;
-                                    small{
+                                    small {
                                         font-size: 1rem;
                                     }
                                 }
-                                
                             }
                         }
                     }
