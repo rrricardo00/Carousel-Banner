@@ -1,0 +1,93 @@
+@mixin fonts($size, $color, $weight, $line, $letter, $text, $textShadowns) {
+    font-family: "Nunito", "nunitolight", "nunito-light", "arial";
+    font-weight: #{$weight};
+    line-height: #{$line};
+    font-size: em($size);
+    color: #{$color};
+    letter-spacing: #{$letter};
+    text-align: #{$text};
+    text-shadow: #{$textShadowns};
+}
+
+@mixin colors() {
+    //cores nos módulos
+    $listButtonsName: "roxo-clube", "laranja-smiles", "vinho-transacoes", "magenta", "verde-Localiza", "amarelo-hertz",
+        "amarelo-shopping", "azul-cartoes", "preto-uber", "cinza-medio";
+    $listColors: "#663399", "#FF5A00", "#A11F62", "#EC008C", "#008D2D", "#FFC845", "#FFF200", "#899eae", "#000000",
+        "#7c7c7c";
+
+    $max: length($listButtonsName);
+
+    @for $i from 1 through $max {
+        &.#{nth($listButtonsName, $i)} {
+            $cor: #{nth($listColors, $i)};
+            &.modulo {
+                .titulo {
+                    color: $cor;
+                }
+
+                .canta-btn {
+                    border-color: $cor;
+                    background-color: $cor;
+                }
+            }
+        }
+    }
+}
+
+// @include fonts(30, '#c7c7c7', 900, 1.1, 1, 'center','1px 1px 2px rgba(000,000,000,0.8)');
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////PD
+
+.titulo-mod058 {
+    font-family: "Nunito", "nunitolight", "nunito-light", "arial";
+    margin: 20px 0;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ff5a00;
+}
+
+.mod058-carousel {
+    font-family: "Nunito", "nunitolight", "nunito-light", "arial";
+    p {
+        margin: 0;
+    }
+    div {
+        &.mod058-carousel-container {
+            position: relative;
+            div {
+                &.img {
+                    picture {
+                        img {
+                            width: 100%;
+                            height: 350px;
+                            @media screen and(max-width: 767px) {
+                                width: auto;
+                            }
+                        }
+                    }
+                    div {
+                        &.texto {
+                            p {
+                                &.titulo {
+                                    position: absolute;
+                                    color: #fff;
+                                    top: 20px;
+                                    left: 20px;
+                                    z-index: 1;
+                                    word-wrap: break-word;
+                                    font-size: 1.5rem;
+                                    small{
+                                        font-size: 1rem;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
