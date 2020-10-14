@@ -11,12 +11,12 @@
     <link href="../_DEFAULT/style.css" rel="stylesheet" type="text/css">
     <link href="_css/style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-    crossorigin="anonymous" />
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-    crossorigin="anonymous" />
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
@@ -26,23 +26,12 @@
         <div class="mod058-carousel owl-carousel owl-theme">
             <div class="mod058-carousel-container">
                 <div class="img">
-                    <picture>
+                    <a href="https://google.com" target="_blank" rel="noopener noreferrer"><picture>
                         <source media="(max-width:767px)" srcset="KV_BASE_MOBILE.jpg">
                         <img src="KV_BASE_DESK.jpg" alt="KV">
-                    </picture>
+                    </picture></a>
                     <div class="texto">
-                        <p class="titulo">África do Sul <br/><small>- Cidade do Cabo</small></p>
-                    </div>
-                </div>
-            </div>
-            <div class="mod058-carousel-container">
-                <div class="img">
-                    <picture>
-                        <source media="(max-width:767px)" srcset="KV_BASE_MOBILE.jpg">
-                        <img src="KV_BASE_DESK.jpg" alt="KV">
-                    </picture>
-                    <div class="texto">
-                        <p class="titulo">África do Sul <br/><small>- Cidade do Cabo</small></p>
+                        <p class="titulo">África do Sul <br /><small>- Cidade do Cabo</small></p>
                     </div>
                 </div>
             </div>
@@ -63,7 +52,19 @@
                 loop: true,
                 items: 1,
                 nav: true,
-                dots: true
+                dots: true,
+                touchDrag: true,
+                responsive: {
+                    // breakpoint from 0 up
+                    0: {
+                        nav: false,
+                       
+                    },
+                   
+                    767: {
+                        nav: true,
+                    }
+                }
             });
         });
     </script>

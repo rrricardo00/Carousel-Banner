@@ -45,24 +45,44 @@
     font-weight: bold;
     text-align: center;
     font-size: 1.2rem;
-    color: #ff5a00;
 }
 
 .mod058-carousel {
+
+    img{
+        max-width: initial !important;
+    }
+
     .owl-nav {
-        position: absolute;
-        top: 30%;
-        margin: 0;
+        
         color: #fff;
-        left: 0;
+        font-family: "Times New Roman", Times, serif;
     }
 
     .owl-prev {
+        margin-top: -360px !important;
+        position: absolute;
         font-size: 5rem !important;
+        height: 350px !important;
+        left: 0;
     }
 
     .owl-next {
+        margin-top: -360px !important;
+        position: absolute;
         font-size: 5rem !important;
+        height: 350px !important;
+        right: 0;
+    }
+
+    .owl-nav [class*="owl-"] {
+        background: none !important;
+        transition: 1s ease-in-out;
+    }
+
+    .owl-nav [class*="owl-"]:hover {
+        background: rgba(0, 0, 0, 0.3) !important;
+        transition: 1s ease-in-out;
     }
 
     font-family: "Nunito", "nunitolight", "nunito-light", "arial";
@@ -76,7 +96,7 @@
                 &.img {
                     picture {
                         img {
-                            width: 100%;
+                            width: auto;
                             height: 350px;
                             @media screen and(max-width: 767px) {
                                 width: auto;
